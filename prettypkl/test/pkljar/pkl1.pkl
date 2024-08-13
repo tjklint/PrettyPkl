@@ -1,0 +1,39 @@
+foo = 
+"bar"
+
+baz = new{
+bar = "baz"
+biz = "biz"
+}
+
+if(bar)
+bar
+else
+foo
+
+result = 100 +
+50 +
+25
+
+nested = 
+ {
+  
+
+
+item1 = "value1";item2 = "value2"}
+
+outer {
+  
+
+
+
+inner {
+  
+
+
+
+item = "value"
+}
+}
+
+largeObject = new { a = 1; b = 2; c = 3; d = 4; e = 5}
