@@ -1,25 +1,38 @@
 {
   "name": "prettypkl",
   "displayName": "PrettyPKL",
-  "description": "VSode Prettify PKL Extension",
+  "description": "VSCode Prettify PKL Extension",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
+  "main": "./src/extension.js",  
   "contributes": {
-    "languages": [{
-      "id": "pkl",
-      "aliases": ["PKL", "pkl"],
-      "extensions": [".pkl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pkl",
-      "scopeName": "source.pkl",
-      "path": "./syntaxes/pkl.tmLanguage.json"
-    }]
-  }
+    "languages": [
+      {
+        "id": "pkl",
+        "aliases": [
+          "PKL",
+          "pkl"
+        ],
+        "extensions": [
+          ".pkl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pkl",
+        "scopeName": "source.pkl",
+        "path": "./syntaxes/pkl.tmLanguage.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:pkl"
+  ],
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
 }
